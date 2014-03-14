@@ -56,12 +56,16 @@ rm -rf %{buildroot}
 # Sets the owner and group of all files to root
 %defattr(-,root,root)
 # Labels certain files as documents to be put in /usr/share/doc
-%doc CHANGELOG CREDITS manual.pdf README
+%doc CREDITS README
 %config(noreplace) %{_sysconfdir}/php.d/krb5.ini
 # Files to include in the RPM
 %{_prefix}
 
 %changelog
+* Fri March 14 2014 Don Ky <don.d.ky@gmail.com> 1.0.0 
+- Rebuilding for CentOS 6
+- Removed changelog and manual.pdf from %files
+
 * Fri May 10 2013 Bryan Maupin <bmaupincode@gmail.com> 20121214-2
 - Add krb5.ini
 
