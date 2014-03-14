@@ -62,7 +62,7 @@ rm -rf %{buildroot}
 %{_prefix}
 
 %changelog
-* Fri March 14 2014 Don Ky <don.d.ky@gmail.com> 1.0.0 
+* Fri Mar 14 2014 Don Ky <don.d.ky@gmail.com> 1.0.0
 - Rebuilding for CentOS 6
 - Removed changelog and manual.pdf from %files
 
